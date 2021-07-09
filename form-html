@@ -1,0 +1,105 @@
+<html>
+<body>
+
+<h1>NMR Data</h1>
+<p>Entry Form v.Prototype<br>
+Hopefully this works</p>
+
+<br> <!--more space between fields-->
+<form>
+	<label for="E.id">Experiment ID:</label><br>
+    <input type="text" id="E.id" name="E.id"><br>
+    <br>
+	
+    <label for="SpecID">Spectrometer ID:</label>
+    <select name="SpecID" id="SpecID">
+        <option value="MO">MO</option>
+        <option value="PH">PH</option>
+        <option value="HU">HU</option>
+        <option value="A600">A600</option>
+        <option value="B600">B600</option>
+        <option value="B800">B800</option>
+    </select><br>
+    <br>
+    
+    <label for="FiSt">Field Strength:</label>
+    <select name="FiSt" id="FiSt">
+        <option value="300">300</option>
+        <option value="400">400</option>
+        <option value="500">500</option>
+        <option value="600">600</option>
+        <option value="700">700</option>
+        <option value="750">750</option>
+        <option value="800">800</option>
+        <option value="900">900</option>
+        <option value="1000">1000</option>
+        <option value="1100">1100</option>
+        <option value="1200">1200</option>
+    </select><br>
+    <br>
+    
+    <label for="Temp">Temperature:</label><br>
+    <input type="text" id="Temp" name="Temp"><br>
+    <br>
+    
+    <label for="PuSeq">Pulse Sequence (comma seperated if needed):</label><br>
+    <input type="text" id="PuSeq" name="PuSeq"><br>
+    <br>
+    
+    <p>Pulse Sequence Nickname:</p>
+    	<input type="checkbox" id="PuSeqNN" name="PuSeqNN" value="1D-1H">
+		<label for="1D-1H"> 1D-1H</label><br>
+		<input type="checkbox" id="PuSeqNN" name="PuSeqNN" value="2D-N-HSQC">
+		<label for="2D-N-HSQC">2D-N-HSQC</label><br>
+		<input type="checkbox" id="PuSeqNN" name="PuSeqNN" value="2D-N-HMQC">
+		<label for="2D-N-HMQC">2D-N-HMQC</label><br>
+        <input type="checkbox" id="PuSeqNN" name="PuSeqNN" value="2D-C-HMQC">
+		<label for="2D-C-HMQC">2D-C-HMQC</label><br>
+        <input type="checkbox" id="PuSeqNN" name="PuSeqNN" value="3D-HNCA">
+		<label for="3D-HNCA">3D-HNCA</label><br>
+        <input type="checkbox" id="PuSeqNN" name="PuSeqNN" value="3D-HNcoCA">
+		<label for="3D-HNcoCA">3D-HNcoCA</label><br>
+ 	<br>
+    
+    <p>Expiration Date:</p>
+    <input type="date" id="ExpDt" name="ExpDt"
+       value="2021-01-01"
+       min="2010-01-01" max="2022-12-31"><br>
+	<br>
+    
+    <label for="Pid">Probe ID:</label>
+    <select name="Pid" id="Pid">
+        <option value="VY201">VY201</option>
+        <option value="BR999">BR999</option>
+        <option value="CPTCI Z129649.0024">CPTCI Z129649.0024</option>
+    </select><br>
+    <br>
+    
+    <label for="usID">User ID Collect:</label>
+    <select name="usID" id="usID">
+        <option value="GVTS">GVTS</option>
+        <option value="TAR">TAR</option>
+        <option value="GTM">GTM</option>
+        <option value="KB">KB</option>
+        <option value="JZH">JZH</option>
+        <option value="RGC">RGC</option>
+        <option value="LK">LK</option>
+    </select><br>
+    <br>
+    
+	<label for="usIDcm">User ID Collect Comment:</label><br>
+    <input type="text" id="usIDcm" name="usIDcm"><br>
+    <br>
+    
+	<label for="linkFID">Link to FID Directory:</label><br>
+    <input type="text" id="linkFID" name="linkFID"><br>
+    <br>
+    
+	<label for="PSTid">PST ID:</label><br>
+    <input type="text" id="PSTid" name="PSTid"><br>
+    <br>
+</form>
+
+
+</body>
+</html>
